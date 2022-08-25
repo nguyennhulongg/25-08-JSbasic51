@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function minutes(x) {
+            var y = x * 1/60;
+            var z = y - Math.floor(y);
+            var t = z * 60;
+            return Math.floor(y) + "h" + Math.round(t) + "p";
+        }
+
+        console.log(minutes(71));
+        console.log(minutes(450));
+        console.log(minutes(1441));
+    </script>
+</body>
+</html>
